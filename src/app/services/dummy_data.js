@@ -152,14 +152,10 @@ angular.module('urbndex')
             },
 
             fetchProfile: function () {
-                var profileData = {
-                    'photoSrc': 'https://placekitten.com/g/82/82',
-                    'name': 'cat lavinia',
-                    'title': 'happiness engineer',
-                    'dept': 'employee morale',
-                    'level': '45',
-                    'cheevo_count': '438'
-                };
+                var profileData = _.find(urbnDexData.cards, { name: 'Matt Lavinia'});
+
+                profileData.level = '45';
+                profileData.cheevo_count = '438';
 
                 return profileData;
             },
