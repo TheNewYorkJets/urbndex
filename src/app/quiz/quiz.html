@@ -1,5 +1,18 @@
-<div class="container">
+<div class="container quiz">
+    <h1>
+        Daily Quiz
+    </h1>
 
-  this is a quiz
+    <div class="quiz-image">
+        <img ng-src="/asssets/users/{{ quizData.photoSrc }}" />
+    </div>
+
+    correct answer: {{ quizData.answer }}
+
+    <div class="quiz-options">
+        <div class="quiz-option" ng-repeat="option in quizData.choices | orderBy: 'rank'">
+            {{ option.name }}
+        </div>
+    </div>
 
 </div>
