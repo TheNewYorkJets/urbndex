@@ -1,10 +1,10 @@
-<div class="container quiz">
+<div class="container stats">
     <h1>
-        Profile
+        Stats
     </h1>
 
-    <div class="profile-image">
-        <img ng-src="/asssets/users/{{ model.photoSrc }}" />
+    <div class="stats-image">
+        <img ng-src="{{ model.photoSrc }}" />
     </div>
 
     <div class="profile-details">
@@ -13,6 +13,20 @@
         Department: {{ model.dept }}
     </div>
 
-    model {{model}}
+    <div class="stats-level">
+        Level: {{ model.level }}
+    </div>
+
+    <h2>Earned Achievements</h2>
+    <div class="stats-chevos-earned" ng-repeat="chevo in model.chevos.earned">
+        <img ng-src="{{ chevo.img }}" />
+        {{ chevo.name }}
+    </div>
+
+    <h2>Unearned Achievements</h2>
+    <div class="stats-chevos-unearned" ng-repeat="chevo in model.chevos.unearned">
+        <img ng-src="{{ chevo.img }}" />
+        {{ chevo.name }}
+    </div>
 
 </div>
