@@ -18,7 +18,7 @@ angular.module('urbndex')
                 }
 
                 $rootScope.$on('start.countdown', function (event, sec) {
-                    var seconds = sec || 3;
+                    var seconds = sec || 10;
                     // element.countdown('start');
                     createCountdown(seconds * 1000);
                 });

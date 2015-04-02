@@ -2,7 +2,7 @@
 
 angular.module('urbndex').
     controller('QuizCtrl', function ($scope, $timeout, $rootScope, dummy_data) {
-
+        var questionCount = 0;
 
         $scope.model = {
             revealDetails: false,
@@ -43,7 +43,8 @@ angular.module('urbndex').
         }
 
         function getQuestion () {
-            $scope.model.question = dummy_data.fetchQuiz();
+            $scope.model.question = dummy_data.fetchQuiz(questionCount);
+            questionCount++;
         }
 
         function resetQuiz () {

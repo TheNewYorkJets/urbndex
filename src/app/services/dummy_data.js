@@ -1,10 +1,11 @@
 angular.module('urbndex')
     .service('dummy_data', function() {
         return {
-            fetchQuiz: function () {
-                 var quizData = {
+            fetchQuiz: function (i) {
+                var index = i || 0;
+                var quizData = [{
                     'photoSrc': 'https://placekitten.com/g/82/82',
-                    'answer': 'matt lavinia',
+                    'answer': 'Cat Lavinia',
                     'choices': [
                         { 
                             'name': 'Steve Miller',
@@ -19,9 +20,26 @@ angular.module('urbndex')
                             'name': 'Kay Nothstein',
                         },
                     ]
-                };
+                }, {
+                    'photoSrc': 'https://placekitten.com/g/82/82',
+                    'answer': 'Theresa Maida',
+                    'choices': [
+                        { 
+                            'name': 'Jenn Lukas',
+                        },
+                        { 
+                            'name': 'Rob Grabill',
+                        },
+                        { 
+                            'name': 'Theresa Maida',
+                        },
+                        { 
+                            'name': 'Finnigen Johnsen',
+                        },
+                    ]
+                }];
 
-                return quizData;
+                return quizData[index];
             },
 
             fetchProfile: function () {
