@@ -49,7 +49,7 @@ angular.module('urbndex')
                     'title': 'happiness engineer',
                     'dept': 'employee morale',
                     'level': '45',
-                    'chevo_count': '438'
+                    'cheevo_count': '438'
                 };
 
                 return profileData;
@@ -203,44 +203,44 @@ angular.module('urbndex')
                     'title': 'happiness engineer',
                     'dept': 'employee morale',
                     'level': '45',
-                    'chevos': {
+                    'cheevos': {
                         'earned': [
                             {
-                                name: 'chevo1',
+                                name: 'cheevo1',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
                             },
                             {
-                                name: 'chevo2',
+                                name: 'cheevo2',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
                             },
                             {
-                                name: 'chevo3',
+                                name: 'cheevo3',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
                             },
                             {
-                                name: 'chevo4',
+                                name: 'cheevo4',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
                             }
                         ],
                         'unearned': [
                             {
-                                name: 'chevo5',
+                                name: 'cheevo5',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'chevo6',
+                                name: 'cheevo6',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'chevo7',
+                                name: 'cheevo7',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'chevo8',
+                                name: 'cheevo8',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'chevo9',
+                                name: 'cheevo9',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             }
                         ]
