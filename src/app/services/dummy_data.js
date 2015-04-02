@@ -4,7 +4,7 @@ angular.module('urbndex')
             fetchQuiz: function () {
                  var quizData = {
                     'photoSrc': 'https://placekitten.com/g/200/300',
-                    'answer': 'matt lavinia',
+                    'answer': 'Matt Lavinia',
                     'choices': [
                         { 
                             'name': 'Steve Miller',
@@ -26,6 +26,7 @@ angular.module('urbndex')
 
             fetchProfile: function () {
                 var profileData;
+                
                 profileData = {
                     'photoSrc': 'https://placekitten.com/g/200/300',
                     'name': 'matt lavinia',

@@ -9,11 +9,12 @@
         <img ng-src="/asssets/users/{{ model.photoSrc }}" />
     </div>
 
-    correct answer: {{ model.answer }}
-
-    <div class="quiz-options">
-        <div class="quiz-option" ng-repeat="choice in model.choices | orderBy: 'rank'">
-            {{ choice.name }}
+    <div ng-switch="model.revealDetails">
+        <div ng-switch-when="true">
+            <div ng-include src="'/app/quiz/partials/revealDetails.html'"></div>
+        </div>
+        <div ng-switch-default>
+            <div ng-include src="'/app/quiz/partials/multipleChoice.html'"></div>
         </div>
     </div>
 
