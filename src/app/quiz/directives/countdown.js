@@ -13,14 +13,19 @@ angular.module('urbndex')
                         })
                         .on('finish.countdown', function (event) {
                             $(this).html('0');
-                            console.log('finished');
+                            $rootScope.$emit('finish.countdown');
                         });
                 }
 
                 $rootScope.$on('start.countdown', function (event, sec) {
-                    var seconds = sec || 10;
+                    var seconds = sec || 3;
                     // element.countdown('start');
                     createCountdown(seconds * 1000);
+                });
+
+                $rootScope.$on('stop.countdown', function (event) {
+                    element.countdown('stop');
+                    element.html('0');
                 });
             }
         };
