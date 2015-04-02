@@ -1,0 +1,32 @@
+<div class="container stats">
+    <h1>
+        Stats
+    </h1>
+
+    <div class="stats-image">
+        <img ng-src="{{ model.photoSrc }}" />
+    </div>
+
+    <div class="profile-details">
+        Name: {{ model.name }}
+        Title: {{ model.title }}
+        Department: {{ model.dept }}
+    </div>
+
+    <div class="stats-level">
+        Level: {{ model.level }}
+    </div>
+
+    <h2>Earned Achievements</h2>
+    <div class="stats-chevos-earned" ng-repeat="chevo in model.chevos.earned">
+        <img ng-src="{{ chevo.img }}" />
+        {{ chevo.name }}
+    </div>
+
+    <h2>Unearned Achievements</h2>
+    <div class="stats-chevos-unearned" ng-repeat="chevo in model.chevos.unearned">
+        <img ng-src="{{ chevo.img }}" />
+        {{ chevo.name }}
+    </div>
+
+</div>

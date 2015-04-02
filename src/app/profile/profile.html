@@ -1,18 +1,17 @@
-<div class="container quiz">
+<div class="container profile">
     <h1>
         Profile
     </h1>
 
     <div class="profile-image">
-        <img ng-src="/asssets/users/{{ model.photoSrc }}" />
+        <img ng-src="{{ model.photoSrc }}" />
     </div>
 
     <div class="profile-details">
-        Name: {{ model.name }}
-        Title: {{ model.title }}
-        Department: {{ model.dept }}
+        <ul>
+            <li>Name: {{ model.name }}</li>
+            <li>Title: {{ model.title }}</li>
+            <li>Department: {{ model.dept }}</li>
+        </ul>
     </div>
-
-    model {{model}}
-
 </div>
