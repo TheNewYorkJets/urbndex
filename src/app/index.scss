@@ -17,5 +17,15 @@ $white: #fff;
     background-position: center;
     text-indent: -99999px;    
 }
+
+p {
+	font: 14px/21px Arial, Helvetica, sans-serif;
+	color: $dark-grey;
+}
+
+div {
+	font: 14px/21px Arial, Helvetica, sans-serif;
+	color: $dark-grey;
+}
 // injector
 // endinjector

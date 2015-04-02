@@ -4,6 +4,7 @@
     left: 0;
     width: 100%;
     background-color: $light-grey;
+    height: 95px;
 
     .hamburger-icon {
         width: 70%;
@@ -14,23 +15,26 @@
 
     .hamburger-menu {
         position: absolute;
-        display: none;
         width: 30%;
-        list-style-type: none;
+        display: none;
+        color: $white;
+        font: 14px/21px Arial, Helvetica, sans-serif;
+        cursor: pointer;
+
     }
 
-    a {
+    a li {
+        float: left;
         width: 30%;
-        list-style-type: none;
-        font: 14px/18px Arial, Helvetica, sans-serif;
+        font: 14px/21px Arial, Helvetica, sans-serif;
         color: $white;
         text-decoration: none;
     }
 
-    a:hover {
+    a:hover, li:hover {
         width: 30%;
         list-style-type: none;
-        font: 14px/18px Arial, Helvetica, sans-serif;
+        font: 14px/21px Arial, Helvetica, sans-serif;
         color: $dex-green;
         text-decoration: none;
     }
@@ -50,7 +54,7 @@
     position: relative;
     float: right;
     width: 35%;
-    margin-top: -35px;
+    margin-top: -50px;
     margin-bottom: 20px;
     padding-right: 50px;
 
@@ -73,7 +77,6 @@
         float: right;
         width: 100%;
         list-style-type: none;
-        background-color: $light-grey;
         font: 14px/18px Arial, Helvetica, sans-serif;
         color: $white;
         text-decoration: none;
