@@ -7,6 +7,10 @@ angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute'])
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       })
+      .when('/quiz', {
+        templateUrl: 'app/quiz/quiz.html',
+        controller: 'QuizCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
