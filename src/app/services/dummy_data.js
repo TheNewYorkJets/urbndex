@@ -39,31 +39,31 @@ angular.module('urbndex')
                 var urbnDexData = {
                     cards: [
                     {
-                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
                         'name': 'matt lavinia',
                         'title': 'happiness engineer',
                         'dept': 'employee morale'  
                     },
                     {
-                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
                         'name': 'matt lavinia',
                         'title': 'happiness engineer',
                         'dept': 'employee morale'  
                     },
                     {
-                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
                         'name': 'matt lavinia',
                         'title': 'happiness engineer',
                         'dept': 'employee morale'  
                     },
                     {
-                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
                         'name': 'matt lavinia',
                         'title': 'happiness engineer',
                         'dept': 'employee morale'  
                     },
                     {
-                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
                         'name': 'matt lavinia',
                         'title': 'happiness engineer',
                         'dept': 'employee morale'  

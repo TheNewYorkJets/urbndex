@@ -1,0 +1,17 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .hamburger-icon {
+        cursor: pointer;
+    }
+
+    .hamburger-menu {
+        display: none;
+        width: 80%;
+        background-color: $green;
+    }
+}
+
