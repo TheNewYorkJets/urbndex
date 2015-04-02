@@ -13,7 +13,7 @@ angular.module('urbndex')
                         })
                         .on('finish.countdown', function (event) {
                             $(this).html('0');
-                            console.log('finished');
+                            $rootScope.$emit('finish.countdown');
                         });
                 }
 
@@ -21,6 +21,11 @@ angular.module('urbndex')
                     var seconds = sec || 10;
                     // element.countdown('start');
                     createCountdown(seconds * 1000);
+                });
+
+                $rootScope.$on('stop.countdown', function (event) {
+                    element.countdown('stop');
+                    element.html('0');
                 });
             }
         };

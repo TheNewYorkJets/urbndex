@@ -3,10 +3,6 @@
 var app = angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
-      })
       .when('/quiz', {
         templateUrl: 'app/quiz/quiz.html',
         controller: 'QuizCtrl'
@@ -24,7 +20,7 @@ var app = angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRo
         controller: 'UrbnDexCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/urbndex'
       });
   })
 ;

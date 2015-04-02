@@ -1,6 +1,6 @@
 
     <div class="quiz-options">
-        <div class="quiz-option" ng-class="{'right-answer': model.chosenAnswer && action.checkRightAnswer(choice), 'chosen-answer': choice.name === model.chosenAnswer.name}" ng-click="action.chooseAnswer(choice)" ng-repeat="choice in model.question.choices | orderBy: 'rank'">
+        <div class="quiz-option" ng-class="{'right-answer': model.chosenAnswer && action.checkRightAnswer(choice), 'chosen-answer': choice.name == model.chosenAnswer.name}" ng-click="action.chooseAnswer(choice)" ng-repeat="choice in model.question.choices | orderBy: 'rank'">
             {{ choice.name }}
         </div>
     </div>
