@@ -4,7 +4,7 @@ angular.module('urbndex')
             fetchQuiz: function (i) {
                 var index = i || 0;
                 var quizData = [{
-                    'photoSrc': 'https://placekitten.com/g/82/82',
+                    'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
                     'answer': 'Cat Lavinia',
                     'choices': [
                         { 
@@ -21,7 +21,7 @@ angular.module('urbndex')
                         },
                     ]
                 }, {
-                    'photoSrc': 'https://placekitten.com/g/82/82',
+                    'photoSrc': '2_UOI_MaidaT1_LThumb.jpg',
                     'answer': 'Theresa Maida',
                     'choices': [
                         { 
