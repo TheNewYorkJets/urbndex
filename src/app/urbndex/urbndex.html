@@ -1,0 +1,21 @@
+<div class="container urbndex">
+    <h1>
+        URBNdex
+    </h1>
+
+    <div class="urbndex-search">
+        <form name="urbndexSearch" novalidate>
+            <label>
+                Search:
+            </label>
+            <input ng-model="model.search">
+            </input>
+        </form>
+    </div>
+
+    <div class="urbndex-card" ng-repeat="card in model.cards">
+        <img ng-src="{{ card.photoSrc }}" />
+        Name: {{ card.name }}
+    </div>
+
+</div>

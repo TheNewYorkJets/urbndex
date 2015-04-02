@@ -25,8 +25,7 @@ angular.module('urbndex')
             },
 
             fetchProfile: function () {
-                var profileData;
-                profileData = {
+                var profileData = {
                     'photoSrc': 'https://placekitten.com/g/200/300',
                     'name': 'matt lavinia',
                     'title': 'happiness engineer',
@@ -34,6 +33,45 @@ angular.module('urbndex')
                 };
 
                 return profileData;
+            },
+
+            fetchUrbnDex: function () {
+                var urbnDexData = {
+                    cards: [
+                    {
+                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'name': 'matt lavinia',
+                        'title': 'happiness engineer',
+                        'dept': 'employee morale'  
+                    },
+                    {
+                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'name': 'matt lavinia',
+                        'title': 'happiness engineer',
+                        'dept': 'employee morale'  
+                    },
+                    {
+                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'name': 'matt lavinia',
+                        'title': 'happiness engineer',
+                        'dept': 'employee morale'  
+                    },
+                    {
+                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'name': 'matt lavinia',
+                        'title': 'happiness engineer',
+                        'dept': 'employee morale'  
+                    },
+                    {
+                        'photoSrc': 'https://placekitten.com/g/200/300',
+                        'name': 'matt lavinia',
+                        'title': 'happiness engineer',
+                        'dept': 'employee morale'  
+                    },
+                    
+                ]};
+
+                return urbnDexData;
             }
         };
 });
