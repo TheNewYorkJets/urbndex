@@ -1,33 +1,12 @@
 'use strict';
 
-angular.module('urbndex')
-    .controller('QuizCtrl', function ($scope) {
+angular.module('urbndex').
+    controller('QuizCtrl', ['$scope', 'dummy_data', function ($scope, dummy_data) {
 
         // dummy data
-        $scope.quizData = {
-                'photoSrc': 'https://placekitten.com/g/200/300',
-                'answer': 'matt lavinia',
-                'choices': [
-                    { 
-                        'name': 'Steve Miller',
-                    },
-                    { 
-                        'name': 'Matt Lavinia',
-                    },
-                    { 
-                        'name': 'Theresa Maida',
-                    },
-                    { 
-                        'name': 'Kay Nothstein',
-                    },
-                ]
-            };
+        $scope.model = dummy_data.fetchQuiz();
 
-        console.log('quiz controller loaded');
-
-        
-
-        angular.forEach($scope.quizData.choices, function(option) {
+        angular.forEach($scope.model.choices, function(option) {
             option.rank = Math.random();
         });
-    });
+    }]);

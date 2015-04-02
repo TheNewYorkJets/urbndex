@@ -6,14 +6,14 @@
     <div class="quiz-countdown" countdown></div>
 
     <div class="quiz-image">
-        <img ng-src="/asssets/users/{{ quizData.photoSrc }}" />
+        <img ng-src="/asssets/users/{{ model.photoSrc }}" />
     </div>
 
-    correct answer: {{ quizData.answer }}
+    correct answer: {{ model.answer }}
 
     <div class="quiz-options">
-        <div class="quiz-option" ng-repeat="option in quizData.choices | orderBy: 'rank'">
-            {{ option.name }}
+        <div class="quiz-option" ng-repeat="choice in model.choices | orderBy: 'rank'">
+            {{ choice.name }}
         </div>
     </div>
 

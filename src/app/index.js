@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute'])
+var app = angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -10,6 +10,10 @@ angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute'])
       .when('/quiz', {
         templateUrl: 'app/quiz/quiz.html',
         controller: 'QuizCtrl'
+      })
+      .when('/profile', {
+        templateUrl: 'app/profile/profile.html',
+        controller: 'ProfileCtrl'
       })
       .otherwise({
         redirectTo: '/'
