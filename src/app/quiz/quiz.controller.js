@@ -2,7 +2,6 @@
 
 angular.module('urbndex').
     controller('QuizCtrl', function ($scope, $timeout, $rootScope, dummy_data) {
-        var questionCount = 0;
 
         $scope.model = {
             revealDetails: false,
@@ -15,7 +14,7 @@ angular.module('urbndex').
                     alert('you only get to choose once');
                 } else {
                     $scope.model.chosenAnswer = choice;
-                    $scope.model.gotItRight = choice.name === $scope.model.question.name;
+                    $scope.model.gotItRight = choice.name === $scope.model.question.answer.name;
 
                     $timeout(function () {
                         // after revealing answer for 2 seconds
@@ -31,7 +30,7 @@ angular.module('urbndex').
                 resetQuiz();
             },
             checkRightAnswer: function (choice) {
-                return choice.name === $scope.model.question.answer;
+                return choice.name === $scope.model.question.answer.name;
             }
         };
 
@@ -43,8 +42,7 @@ angular.module('urbndex').
         }
 
         function getQuestion () {
-            $scope.model.question = dummy_data.fetchQuiz(questionCount);
-            questionCount++;
+            $scope.model.question = dummy_data.fetchQuiz();
         }
 
         function resetQuiz () {
