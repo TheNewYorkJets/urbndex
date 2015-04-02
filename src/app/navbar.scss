@@ -6,31 +6,81 @@
     background-color: $light-grey;
 
     .hamburger-icon {
+        width: 70%;
         cursor: pointer;
+        padding-left: 30px;
+        padding-top: 30px;
     }
 
     .hamburger-menu {
+        position: absolute;
         display: none;
-        width: 80%;
-        background-color: $green;
+        width: 30%;
+        list-style-type: none;
     }
 
-    .profile-details {
+    a {
+        width: 30%;
+        list-style-type: none;
+        font: 14px/18px Arial, Helvetica, sans-serif;
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        width: 30%;
+        list-style-type: none;
+        font: 14px/18px Arial, Helvetica, sans-serif;
+        color: $dex-green;
+        text-decoration: none;
+    }
+
+    .profile-wrapper {
         float: right;
-        font: 16px/21px Arial, Helvetica, sans-serif;
-        color: #ffffff;
-        padding-right: 30px;
-
-    }
-
-    profile-image {
-
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
 .logo {
     background-color: $dark-grey;
 }
+
+.navbar-profile {
+    position: relative;
+    float: right;
+    width: 35%;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+
+    .profile-image {
+        width: 20%;
+        float: left;
+        position: relative;
+        clear: both;
+    }
+
+    .profile-details {
+        width: 80%;
+        float: right;
+        position: relative;
+        font: 14px/18px Arial, Helvetica, sans-serif;
+        color: $white;
+    }
+
+    li {
+        float: right;
+        width: 100%;
+        list-style-type: none;
+        background-color: $light-grey;
+        font: 14px/18px Arial, Helvetica, sans-serif;
+        color: $white;
+        text-decoration: none;
+        list-style-position: inside;
+    }
+}
+
 
 
 
