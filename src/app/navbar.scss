@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #2b2b2b;
 
     .hamburger-icon {
         cursor: pointer;
@@ -13,5 +14,19 @@
         width: 80%;
         background-color: $green;
     }
+
+    .profile-details {
+        float: right;
+        font: 16px/21px Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        padding-right: 30px;
+
+    }
+
+    profile-image {
+
+    }
 }
+
+
 
