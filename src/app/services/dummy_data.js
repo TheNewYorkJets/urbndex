@@ -29,7 +29,9 @@ angular.module('urbndex')
                     'photoSrc': 'https://placekitten.com/g/82/82',
                     'name': 'cat lavinia',
                     'title': 'happiness engineer',
-                    'dept': 'employee morale'
+                    'dept': 'employee morale',
+                    'level': '45',
+                    'chevo_count': '438'
                 };
 
                 return profileData;
@@ -40,34 +42,136 @@ angular.module('urbndex')
                     cards: [
                     {
                         'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
-                        'name': 'matt lavinia',
-                        'title': 'happiness engineer',
-                        'dept': 'employee morale'  
+                        'name': 'Rob Grabill',
+                        'title': 'Product Manager',
+                        'dept': 'Anthropologie Web Production'
                     },
                     {
                         'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
-                        'name': 'matt lavinia',
-                        'title': 'happiness engineer',
-                        'dept': 'employee morale'  
+                        'name': 'Theresa Maida',
+                        'title': 'Creative Project Delivery Mgr',
+                        'dept': 'Anthropologie Web Production'
                     },
                     {
                         'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
-                        'name': 'matt lavinia',
-                        'title': 'happiness engineer',
-                        'dept': 'employee morale'  
+                        'name': 'Kay Nothstein',
+                        'title': 'Project Manager Ecommerce',
+                        'dept': 'Anthropologie Web Production'
                     },
                     {
                         'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
-                        'name': 'matt lavinia',
-                        'title': 'happiness engineer',
-                        'dept': 'employee morale'  
+                        'name': 'Annaliese Johnsen',
+                        'title': 'Project Manager',
+                        'dept': 'Anthropologie Web Production'
                     },
                     {
                         'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
-                        'name': 'matt lavinia',
-                        'title': 'happiness engineer',
-                        'dept': 'employee morale'  
+                        'name': 'Stephen Miller',
+                        'title': 'Senior Manager',
+                        'dept': 'Anthropologie Web Production'
                     },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Brian Innes',
+                        'title': 'Director of Web Production',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Matt Lavinia',
+                        'title': 'Development Manager',
+                        'dept': 'Anthropologie Web Production'
+                        },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'RayAna Park',
+                        'title': 'Project Manager Digital',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Steve Mair',
+                        'title': 'Web Production Manager',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Andrew Rudi',
+                        'title': 'Front End Developer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Chunyin Li',
+                        'title': 'Front End Developer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Katie Friedgen',
+                        'title': 'Front End Developer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Louis Horton',
+                        'title': 'Front End Developer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Meina Kalayeh',
+                        'title': 'Front End Developer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Tom Bicknell',
+                        'title': 'Front End Developer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Tracy Stonaker',
+                        'title': 'Front End Developer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Patrick Thiel',
+                        'title': 'Quality Assurance Analyst',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Alyssa Drobatz',
+                        'title': 'Temporary Employee',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'David Mallon',
+                        'title': 'Senior Web Producer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Simone Conner',
+                        'title': 'Web Producer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Craig Smith',
+                        'title': 'Web Producer',
+                        'dept': 'Anthropologie Web Production'
+                    },
+                    {
+                        'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                        'name': 'Samantha Mayer',
+                        'title': 'Web Producer',
+                        'dept': 'Anthropologie Web Production'
+                    }
                     
                 ]};
 
