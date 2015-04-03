@@ -5,6 +5,15 @@ $dex-green: #b2ff00;
 $blue: #196aff;
 $white: #fff;
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 20px;
+}
+
 .logo {
     display: inline-block;
     position: relative;
@@ -16,6 +25,29 @@ $white: #fff;
     background: url('/assets/images/urbndex_logo.png') no-repeat 0 0;
     background-position: center;
     text-indent: -99999px;    
+}
+
+p {
+	font: 14px/21px Arial, Helvetica, sans-serif;
+	color: $dark-grey;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font: bold 14px/21px Arial, Helvetica, sans-serif;
+    color: $dark-grey;
+    text-align: left;
+}
+
+.breadcrumb {
+    font: 12px/21px Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: $dex-green;
+    background-color: $dark-grey;
+    padding: 5px;
 }
 // injector
 // endinjector

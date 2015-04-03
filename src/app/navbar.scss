@@ -1,86 +1,183 @@
+.logo {
+    background-color: $dark-grey;
+    height: 60px;
+}
+
 .navbar {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
+    height: 90px;
     background-color: $light-grey;
+    position: relative;
 
     .hamburger-icon {
-        width: 70%;
-        cursor: pointer;
-        padding-left: 30px;
-        padding-top: 30px;
-    }
-
-    .hamburger-menu {
-        position: absolute;
-        display: none;
-        width: 30%;
-        list-style-type: none;
-    }
-
-    a {
-        width: 30%;
-        list-style-type: none;
-        font: 14px/18px Arial, Helvetica, sans-serif;
-        color: $white;
-        text-decoration: none;
-    }
-
-    a:hover {
-        width: 30%;
-        list-style-type: none;
-        font: 14px/18px Arial, Helvetica, sans-serif;
-        color: $dex-green;
-        text-decoration: none;
+        position: relative;
+        top: 40%;
+        padding-left: 20px;
     }
 
     .profile-wrapper {
+        width: 40%;
         float: right;
-        margin: 0 auto;
-        width: 100%;
+        position: relative;
     }
 }
 
-.logo {
-    background-color: $dark-grey;
-}
+.hamburger-menu {
+    width: 100px;
+    float: left;
+    position: absolute;
+    clear: both;
+    display: none;
+    margin-left: 60px;
+    top: 35px;
+    // left: 1px;
+    list-style-type: none;
+    background-color: $white;
+    //border-bottom: 1px $dex-green;
+    color: $dark-grey;
+    z-index: 5;
+    cursor: pointer;
+    font: 14px/32px Arial, Helvetica, sans-serif;
+    opacity: 0.9;
 
-.navbar-profile {
-    position: relative;
-    float: right;
-    width: 35%;
-    margin-top: -35px;
-    margin-bottom: 20px;
-    padding-right: 50px;
-
-    .profile-image {
-        width: 20%;
-        float: left;
-        position: relative;
-        clear: both;
-    }
-
-    .profile-details {
-        width: 80%;
-        float: right;
-        position: relative;
-        font: 14px/18px Arial, Helvetica, sans-serif;
-        color: $white;
+    ul {
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 1px solid $dark-grey;
     }
 
     li {
-        float: right;
-        width: 100%;
-        list-style-type: none;
-        background-color: $light-grey;
-        font: 14px/18px Arial, Helvetica, sans-serif;
-        color: $white;
-        text-decoration: none;
-        list-style-position: inside;
+        border-bottom: 1px solid $dark-grey;
+    }
+
+    a:hover {
+        color: $dex-green;
+    }
+
+    a {
+        border-bottom: 1px $dex-green;
+    }
+
+    li:last-child {
+        border: none;
     }
 }
 
 
+.profile-wrapper {
+    top: -20px;
+    float: right;
 
+    .profile-nav {
+        width: 70px;
+        padding-right: 10px;
+    }
 
+    .profile-image {
+        float: left;
+    }
+
+    .profile-details {
+        float: left;
+        padding-right: 30px;
+    }
+
+    li {
+        font: 12px/18px Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        color: $white;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        height: 90px;
+        background-color: $light-grey;
+        position: relative;
+
+        .hamburger-icon {
+            position: relative;
+            padding-left: 20px;
+            top: -40px;
+        }
+
+        .profile-wrapper {
+            width: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+
+    .hamburger-menu {
+        width: 100px;
+        float: left;
+        position: absolute;
+        clear: both;
+        display: none;
+        margin-left: 60px;
+        top: -42px;
+        // left: 1px;
+        list-style-type: none;
+        background-color: $white;
+        //border-bottom: 1px $dex-green;
+        color: $dark-grey;
+        z-index: 5;
+        cursor: pointer;
+        font: 14px/32px Arial, Helvetica, sans-serif;
+        opacity: 0.9;
+
+        ul {
+            margin: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 1px solid $dark-grey;
+        }
+
+        li {
+            border-bottom: 1px solid $dark-grey;
+        }
+
+        a:hover {
+            color: $dex-green;
+        }
+
+        a {
+            border-bottom: 1px $dex-green;
+        }
+
+        li:last-child {
+            border: none;
+        }
+    }
+
+    .profile-wrapper {
+        top: -20px;
+        margin: 0 auto;
+
+        .profile-nav {
+            width: 70px;
+            padding-right: 10px;
+        }
+
+        .profile-image {
+            padding-left: 40px;
+        }
+
+        .profile-details {
+            float: left;
+            padding-right: 30px;
+            margin-top: -10px;
+        }
+
+        li {
+            font: 14px/21px Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            color: $white;
+            margin-left: -20px;
+        }
+    }
+
+}
