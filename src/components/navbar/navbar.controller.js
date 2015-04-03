@@ -4,7 +4,7 @@ angular.module('urbndex').
     controller('NavbarCtrl', ['$scope', 'dummy_data', function ($scope, dummy_data) {
 
     // dummy data
-    $scope.model = dummy_data.fetchProfile();
+    $scope.model = dummy_data.fetchProfile('7');
 
     var a = $scope.action = {
         showHide: function () {
