@@ -25,9 +25,11 @@
 
     <div class="urbndex-cards">
         <div class="urbndex-card col" ng-repeat="card in model.cards | filter:model.search:strict">
-            <div></div>
-            <img ng-src="/assets/users/{{ card.photoSrc }}" />
-            <p>{{ card.name }}</p>
+            <a href='#/profile?userId={{ card.id }}'>
+                <div></div>
+                <img ng-src="/assets/users/{{ card.photoSrc }}" />
+                <p>{{ card.name }}</p>
+            </a>
         </div> 
     </div>
     
