@@ -1,8 +1,8 @@
 
-<div class="correct-answer">Correct answer: {{ model.question.answer.name }}</div>
+<div class="correct-answer quiz-content-block">Correct answer: {{ model.question.answer.name }}</div>
 
-<div class="job-title">Title: {{ model.question.answer.title }}</div>
+<div class="job-title quiz-content-block">Title: {{ model.question.answer.title }}</div>
 
-<div class="department">Department: {{ model.question.answer.dept }}</div>
+<div class="department quiz-content-block">Department: {{ model.question.answer.dept }}</div>
 
-<button class="next-quiz" ng-click="action.resetQuiz()">Next Button</button>
+<button class="next-quiz" ng-click="action.resetQuiz()">Next Question</button>

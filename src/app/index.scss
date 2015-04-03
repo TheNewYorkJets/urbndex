@@ -49,5 +49,18 @@ h1 {
     background-color: $dark-grey;
     padding: 5px;
 }
+
+button {
+    background: #959595;
+    color: $dex-green;
+    padding: 10px 30px;
+    border: 0;
+    margin: 0;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+
+
 // injector
 // endinjector
