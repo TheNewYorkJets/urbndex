@@ -20,17 +20,16 @@
     </div>
 
     <div class="chievos-wrapper">
-        <h2>Earned Achievements</h2>
+        <h2>Cheevos</h2>
         <div class="stats-cheevos-earned" ng-repeat="cheevo in model.cheevos.earned">
             <img ng-src="{{ cheevo.img }}" />
             {{ cheevo.name }}
         </div>
 
-        <h2>Unearned Achievements</h2>
+        <!-- <h2>Unearned Achievements</h2> -->
         <div class="stats-cheevos-unearned" ng-repeat="cheevo in model.cheevos.unearned">
-            <img ng-src="{{ cheevo.img }}" />
+            <img class="uncheevod" ng-src="{{ cheevo.img }}" />
             {{ cheevo.name }}
         </div>
     </div>
-
 </div>

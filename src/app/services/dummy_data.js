@@ -270,7 +270,47 @@ angular.module('urbndex')
                             {
                                 name: 'uncheevo5',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                            },
+                            {
+                                name: 'uncheevo6',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                            },
+                            {
+                                name: 'uncheevo7',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                            },
+                            {
+                                name: 'uncheevo8',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                            },
+                            {
+                                name: 'uncheevo9',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                            },
+                            {
+                                name: 'uncheevo10',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             }
+                        ]
+                    },
+                    'bio': {
+                        'question': [
+                            {
+                                quest: 'What state did you grow up in?',
+                                ans: 'The magical state of Pennsylvania.'
+                            },
+                            {
+                                quest: 'What state do you reside in now?',
+                                ans: 'The magical state of Pennsylvania.'
+                            },
+                            {
+                                quest: 'Which URBN dog is your favorite?',
+                                ans: 'Finnegan and Buster, of course!'
+                            },
+                            {
+                                quest: 'What is your go-to 543 lunch?',
+                                ans: 'Grilled chicken sandwich with fries and a gingerale.'
+                            },
                         ]
                     }
                 };
