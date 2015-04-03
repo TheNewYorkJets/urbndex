@@ -10,6 +10,7 @@
     position: relative;
 
     .hamburger-icon {
+        float: left;
         position: relative;
         top: 40%;
         padding-left: 20px;
@@ -70,7 +71,6 @@
 
 
 .profile-wrapper {
-    top: -20px;
     float: right;
 
     .profile-nav {
@@ -92,6 +92,15 @@
         letter-spacing: 1px;
         color: $white;
         margin-left: -20px;
+    }
+}
+
+@media (min-width: 801px) {
+    .profile-wrapper {
+
+        .profile-image {
+            margin-top: 9px;
+        }
     }
 }
 
