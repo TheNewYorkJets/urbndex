@@ -104,8 +104,28 @@ angular.module('urbndex')
                 'title': 'Development Manager',
                 'dept': 'Anthropologie Web Production',
                 'level': '8',
-                'cheevo_count': '567'
-                },
+                'cheevo_count': '567',
+                'bio': {
+                    'question': [
+                        {
+                            quest: 'What state did you grow up in?',
+                            ans: 'The magical state of Pennsylvania.'
+                        },
+                        {
+                            quest: 'What state do you reside in now?',
+                            ans: 'The magical state of Pennsylvania.'
+                        },
+                        {
+                            quest: 'Which URBN dog is your favorite?',
+                            ans: 'Finnegan and Buster, of course!'
+                        },
+                        {
+                            quest: 'What is your go-to 543 lunch?',
+                            ans: 'Grilled chicken sandwich with fries and a gingerale.'
+                        },
+                    ]
+                }
+            },
             {
                 'id': '8',
                 'photoSrc': '8_UOI_parkr1_LThumb.jpg',
@@ -275,6 +295,26 @@ angular.module('urbndex')
                     'dept': 'Employee Morale',
                     'level': '8',
                     'cheevo_count': '567',
+                    'bio': {
+                    'question': [
+                        {
+                            quest: 'What state did you grow up in?',
+                            ans: 'The magical state of Pennsylvania.'
+                        },
+                        {
+                            quest: 'What state do you reside in now?',
+                            ans: 'The magical state of Pennsylvania.'
+                        },
+                        {
+                            quest: 'Which URBN dog is your favorite?',
+                            ans: 'Finnegan and Buster, of course!'
+                        },
+                        {
+                            quest: 'What is your go-to 543 lunch?',
+                            ans: 'Grilled chicken sandwich with fries and a gingerale.'
+                        },
+                    ]
+                },
                     'cheevos': {
                         'earned': [
                             {
