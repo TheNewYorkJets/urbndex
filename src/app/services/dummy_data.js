@@ -233,7 +233,8 @@ angular.module('urbndex')
                     'name': 'Matt Lavinia',
                     'title': 'Happiness Engineer',
                     'dept': 'Employee Morale',
-                    'level': '45',
+                    'level': '8',
+                    'cheevo_count': '567',
                     'cheevos': {
                         'earned': [
                             {

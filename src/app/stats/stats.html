@@ -19,8 +19,18 @@
         </div>
     </div>
 
+    <div class="chievo-bar">
+        You currently have {{ model.cheevo_count }} Chievo Points!
+        <div class="meter-wrapper">
+            <div class="meter">
+              <span style="width: 75%"></span>
+            </div>
+        </div>
+        Next Reward: <span class="reward">5$ Gift Card to Jharoka</span> <span class="reward-cost">(600 Chievos)</span>
+    </div>
+
     <div class="chievos-wrapper">
-        <h2>Cheevos</h2>
+        <h2>Chievos</h2>
         <div class="stats-cheevos-earned" ng-repeat="cheevo in model.cheevos.earned">
             <img ng-src="{{ cheevo.img }}" />
             {{ cheevo.name }}

@@ -6,4 +6,13 @@ angular.module('urbndex').
         // dummy data
         $scope.model = dummy_data.fetchStats();
 
+        $(".meter > span").each(function() {
+            $(this)
+                .data("origWidth", $(this).width())
+                .width(0)
+                .animate({
+                    width: $(this).data("origWidth")
+                }, 1200);
+        });
+
     }]);
