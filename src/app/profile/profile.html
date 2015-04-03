@@ -3,20 +3,31 @@
         Profile
     </h1>
 
-    <div class="profile-image">
-        <img ng-src="assets/users/{{ model.photoSrc }}" />
+    <div class="profile-body-wrapper">
+        <div class="profile-body-image">
+            <img ng-src="/assets/users/{{ model.photoSrc }}" />
+        </div>
+
+        <div class="profile-body-details">
+            {{ model.name }} <br />
+            {{ model.title }} <br />
+            {{ model.dept }} <br />
+        </div>
+
+        <div class="stats-level">
+            Level: {{ model.level }}
+        </div>
+        <div class="cheevos-level">
+            Cheevos: {{ model.cheevo_count }}
+        </div>
     </div>
 
-    <div class="profile-details">
-        <ul>
-            <li>{{ model.name }}</li>
-            <li>{{ model.title }}</li>
-            <li>{{ model.dept }}</li>
-        </ul>
-    </div>
-
-    <div class="profile-stats">
-        <span>Level: {{ model.level }}</span>
-        <span>Cheevo Points: {{ model.cheevo_count }}
+    <div class="bio-wrapper-profile">
+        <h2>Additional Information</h2>
+        <div class="bio-details" ng-repeat="question in model.bio.question">
+            {{ question.quest }} <br />
+            <span class="answer-font">{{ question.ans }}</span> <br />
+            <br />
+        </div>
     </div>
 </div>
