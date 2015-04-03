@@ -1,13 +1,13 @@
 <div class="profile-wrapper">
 	<div class="profile-image">
-	    <img class="profile-nav" ng-src="{{ model.photoSrc }}" />
+	    <img class="profile-nav" ng-src="assets/users/{{ model.photoSrc }}" />
 	</div>
 
 	<div class="profile-details">
 	    <ul>
-	        <li>Name: {{ model.name }}</li>
-	        <li>Title: {{ model.title }}</li>
-	        <li>Department: {{ model.dept }}</li>
+	        <li>{{ model.name }}</li>
+	        <li>{{ model.title }}</li>
+	        <li>{{ model.dept }}</li>
 	    </ul>
 	</div>
 </div>
