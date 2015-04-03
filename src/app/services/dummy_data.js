@@ -318,79 +318,103 @@ angular.module('urbndex')
                     'cheevos': {
                         'earned': [
                             {
-                                name: 'cheevo1',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                                name: 'Winning',
+                                img: 'assets/images/cheevo_winning.png'
                             },
                             {
-                                name: 'cheevo2',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                                name: 'Gotta Start Somewhere',
+                                img: 'assets/images/cheevo_1dex.png'
                             },
                             {
-                                name: 'cheevo3',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                                name: 'Winning',
+                                img: 'assets/images/cheevo_winning.png'
                             },
                             {
-                                name: 'cheevo4',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                                name: '10 Days',
+                                img: 'assets/images/cheevo_teamdex.png'
                             },
                             {
-                                name: 'cheevo5',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                                name: 'Let\'s Talk About Dex',
+                                img: 'assets/images/cheevo_10dex.png'
                             },
                             {
-                                name: 'cheevo6',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                                name: 'Dexin\' for a Livin\'',
+                                img: 'assets/images/cheevo_5days.png'
                             },
                             {
-                                name: 'cheevo7',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                                name: 'Top Line Dex\'d\n',
+                                img: 'assets/images/cheevo_dexexec.png'
                             },
-                            {
-                                name: 'cheevo8',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
-                            }
                         ],
                         'unearned': [
                             {
-                                name: 'uncheevo1',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: 'Bringing Dexy Back',
+                                img: 'assets/images/cheevo_50dex.png'
                             },
                             {
-                                name: 'uncheevo2',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: '10 Days',
+                                img: 'assets/images/cheevo_10days.png'
                             },
                             {
-                                name: 'uncheevo3',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: '100 Dexes',
+                                img: 'assets/images/cheevo_100dex.png'
                             },
                             {
-                                name: 'uncheevo4',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: '500 Dexes',
+                                img: 'assets/images/cheevo_500dex.png'
                             },
                             {
-                                name: 'uncheevo5',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: 'Winning',
+                                img: 'assets/images/cheevo_winning.png'
                             },
                             {
-                                name: 'uncheevo6',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: 'Bringing Dexy Back',
+                                img: 'assets/images/cheevo_50dex.png'
                             },
                             {
-                                name: 'uncheevo7',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: '10 Days',
+                                img: 'assets/images/cheevo_10days.png'
                             },
                             {
-                                name: 'uncheevo8',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: 'Top Line Dex\'d\n',
+                                img: 'assets/images/cheevo_dexexec.png'
                             },
                             {
-                                name: 'uncheevo9',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
+                                name: '100 Dexes',
+                                img: 'assets/images/cheevo_100dex.png'
                             },
                             {
-                                name: 'uncheevo10',
-                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
-                            }
+                                name: 'Winning',
+                                img: 'assets/images/cheevo_winning.png'
+                            },
+                            {
+                                name: '500 Dexes',
+                                img: 'assets/images/cheevo_500dex.png'
+                            },
+                            {
+                                name: '500 Dexes',
+                                img: 'assets/images/cheevo_500dex.png'
+                            },
+                            {
+                                name: 'Winning',
+                                img: 'assets/images/cheevo_winning.png'
+                            },
+                            {
+                                name: 'Bringing Dexy Back',
+                                img: 'assets/images/cheevo_50dex.png'
+                            },
+                            {
+                                name: '10 Days',
+                                img: 'assets/images/cheevo_10days.png'
+                            },
+                            {
+                                name: 'Top Line Dex\'d\n',
+                                img: 'assets/images/cheevo_dexexec.png'
+                            },
+                            {
+                                name: '100 Dexes',
+                                img: 'assets/images/cheevo_100dex.png'
+                            },
                         ]
                     },
                     'bio': {
