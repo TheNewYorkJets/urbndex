@@ -14,6 +14,8 @@ angular.module('urbndex').
             },
 
             totalCount: 5,
+
+            // for storing question fetched from service
             questionsArr: [],
 
             // array of boolean for tracking question

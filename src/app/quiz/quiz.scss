@@ -86,20 +86,22 @@ $quizTrackerSize: 8px;
     font-size: 13px;
     text-transform: capitalize;
     margin: 0 0 15px;
+
+    &.quiz-option {
+        background: $dex-green;
+        cursor: pointer;
+    }
+
+    &.chosen-answer {
+        background: red;
+    }
+
+    &.right-answer {
+        background: green;
+    }
 }
 
-.quiz-option {
 
-}
-
-
-.chosen-answer {
-    background: red;
-}
-
-.right-answer {
-    background: green;
-}
 
 .next-quiz {
     display: inline-block;

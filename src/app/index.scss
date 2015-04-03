@@ -53,6 +53,7 @@ h1 {
 
 button,
 .default-button {
+    cursor: pointer;
     background: $blue;
     color: $dex-green;
     padding: 10px 30px;
@@ -62,6 +63,11 @@ button,
     font: 16px/1.4 arial;
     text-decoration: none;
     display: inline-block;
+
+    &:hover {
+        background: $dex-green;
+        color: $white;
+    }
 }
 
 
