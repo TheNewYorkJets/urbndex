@@ -166,10 +166,10 @@ angular.module('urbndex')
 
             fetchStats: function () {
                 var statsData = {
-                    'photoSrc': 'https://placekitten.com/g/200/300',
-                    'name': 'matt lavinia',
-                    'title': 'happiness engineer',
-                    'dept': 'employee morale',
+                    'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
+                    'name': 'Matt Lavinia',
+                    'title': 'Happiness Engineer',
+                    'dept': 'Employee Morale',
                     'level': '45',
                     'cheevos': {
                         'earned': [
@@ -188,27 +188,43 @@ angular.module('urbndex')
                             {
                                 name: 'cheevo4',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                            },
+                            {
+                                name: 'cheevo5',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                            },
+                            {
+                                name: 'cheevo6',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                            },
+                            {
+                                name: 'cheevo7',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
+                            },
+                            {
+                                name: 'cheevo8',
+                                img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-155_award_achievement_star-128.png'
                             }
                         ],
                         'unearned': [
                             {
-                                name: 'cheevo5',
+                                name: 'uncheevo1',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'cheevo6',
+                                name: 'uncheevo2',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'cheevo7',
+                                name: 'uncheevo3',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'cheevo8',
+                                name: 'uncheevo4',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             },
                             {
-                                name: 'cheevo9',
+                                name: 'uncheevo5',
                                 img: 'https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-153_award_achievement-128.png'
                             }
                         ]

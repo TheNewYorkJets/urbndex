@@ -1,32 +1,36 @@
 <div class="container stats">
     <h1>
-        Stats
+        <span class="breadcrumb">URBNdex > Stats</span>
     </h1>
 
-    <div class="stats-image">
-        <img ng-src="{{ model.photoSrc }}" />
+    <div class="profile-wrapper-stats">
+        <div class="stats-image">
+            <img ng-src="/assets/users/{{ model.photoSrc }}" />
+        </div>
+
+        <div class="profile-details">
+            {{ model.name }} <br />
+            {{ model.title }} <br />
+            {{ model.dept }} <br />
+        </div>
+
+        <div class="stats-level">
+            Level: {{ model.level }}
+        </div>
     </div>
 
-    <div class="profile-details">
-        Name: {{ model.name }}
-        Title: {{ model.title }}
-        Department: {{ model.dept }}
-    </div>
+    <div class="chievos-wrapper">
+        <h2>Earned Achievements</h2>
+        <div class="stats-cheevos-earned" ng-repeat="cheevo in model.cheevos.earned">
+            <img ng-src="{{ cheevo.img }}" />
+            {{ cheevo.name }}
+        </div>
 
-    <div class="stats-level">
-        Level: {{ model.level }}
-    </div>
-
-    <h2>Earned Achievements</h2>
-    <div class="stats-cheevos-earned" ng-repeat="cheevo in model.cheevos.earned">
-        <img ng-src="{{ cheevo.img }}" />
-        {{ cheevo.name }}
-    </div>
-
-    <h2>Unearned Achievements</h2>
-    <div class="stats-cheevos-unearned" ng-repeat="cheevo in model.cheevos.unearned">
-        <img ng-src="{{ cheevo.img }}" />
-        {{ cheevo.name }}
+        <h2>Unearned Achievements</h2>
+        <div class="stats-cheevos-unearned" ng-repeat="cheevo in model.cheevos.unearned">
+            <img ng-src="{{ cheevo.img }}" />
+            {{ cheevo.name }}
+        </div>
     </div>
 
 </div>

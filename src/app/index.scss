@@ -40,5 +40,19 @@ div {
 li {
     list-style: none;
 }
+
+h1 {
+    font: bold 14px/21px Arial, Helvetica, sans-serif;
+    color: $dark-grey;
+    text-align: left;
+}
+
+.breadcrumb {
+    font: 12px/21px Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: $dex-green;
+    background-color: $dark-grey;
+    padding: 5px;
+}
 // injector
 // endinjector
