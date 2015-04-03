@@ -3,19 +3,32 @@
         URBNdex
     </h1>
 
-    <div class="urbndex-search">
-        <form name="urbndexSearch" novalidate>
-            <label>
-                Search:
-            </label>
-            <input ng-model="model.search">
-            </input>
-        </form>
+    <div class="urbndex-topbar">
+        <div class="urbndex-search">
+            <form name="urbndexSearch" novalidate>
+                <label>
+                </label>
+                <div class="input-wrapper">
+                    <input ng-model="model.search" value="model.search">
+                    </input>
+                </div>
+            </form>
+        </div>
+
+        <div class="urbndex-filters">
+            <button ng-click="action.filterIt('Front End')">Front End Devs</button>
+            <button ng-click="action.filterIt('Project')">Project Managers</button>
+            <button ng-click="action.filterIt('10')">Level 10</button>
+            <button ng-click="action.filterIt('Web Production')">Web Production</button>
+    </div>
     </div>
 
-    <div class="urbndex-card col" ng-repeat="card in model.cards">
-        <img ng-src="/assets/users/{{ card.photoSrc }}" />
-        <p>{{ card.name }}</p>
+    <div class="urbndex-cards">
+        <div class="urbndex-card col" ng-repeat="card in model.cards | filter:model.search:strict">
+            <div></div>
+            <img ng-src="/assets/users/{{ card.photoSrc }}" />
+            <p>{{ card.name }}</p>
+        </div> 
     </div>
-
+    
 </div>
