@@ -3,13 +3,18 @@
         Daily Quiz
     </h1>
 
+    <div class="quiz-tracker">
+        <div class="tracker-dot" ng-repeat="question in model.questionsArr" ng-class="{'correct': model.tracker[$index], 'incorrect': model.tracker[$index] == false}"></div>
+    </div>
+
     <div class="quiz-countdown" countdown></div>
+    
 
     <div class="quiz-image">
         <img ng-src="assets/users/{{ model.question.answer.photoSrc }}" />
     </div>
 
-    <div ng-switch="model.revealDetails">
+    <div ng-switch="model.each.revealDetails">
         <div ng-switch-when="true">
             <div ng-include src="'/app/quiz/partials/revealDetails.html'"></div>
         </div>
