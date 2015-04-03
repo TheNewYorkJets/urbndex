@@ -80,5 +80,15 @@
         p {
             text-align: center;
         }
-    } 
+    }
+
+    button.clear-button {
+        background-color: $light-grey;
+        color: $blue;
+
+        &:hover {
+            background-color: $dex-green;
+            color: $white;
+        }
+    }
 }
