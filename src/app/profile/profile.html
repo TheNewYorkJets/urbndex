@@ -30,4 +30,11 @@
             <br />
         </div>
     </div>
+
+    <div class="related-users">
+        <h2>Related Users</h2>
+        <div class="related-user" ng-repeat="user in model.related">
+            <img ng-src="/assets/users/{{ user.user.photoSrc }}" />
+        </div>
+    </div>
 </div>

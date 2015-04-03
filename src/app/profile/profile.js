@@ -8,4 +8,22 @@ angular.module('urbndex').
         // dummy data
         $scope.model = dummy_data.fetchProfile(id);
 
+        $scope.model.related = [
+            {
+                user: dummy_data.fetchProfile('22')
+            },
+            {
+                user: dummy_data.fetchProfile('14')
+            },
+            {
+                user: dummy_data.fetchProfile('4')
+            },
+            {
+                user: dummy_data.fetchProfile('9')
+            },
+            {
+                user: dummy_data.fetchProfile('11')
+            }
+        ];
+
     }]);
