@@ -31,6 +31,10 @@ var app = angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRo
         templateUrl: 'app/challenge/challenge.html',
         controller: 'ChallengeCtrl'
       })
+      .when('/settings', {
+        templateUrl: 'app/settings/settings.html',
+        controller: 'SettingsCtrl'
+      })
       .otherwise({
         redirectTo: '/urbndex'
       });
