@@ -4,6 +4,7 @@ angular.module('urbndex')
         var urbnDexData = {
             cards: [
             {
+                'id': '1',
                 'photoSrc': '1_UOI_GrabillR1_LThumb.jpg',
                 'name': 'Rob Grabill',
                 'title': 'Product Manager',
@@ -12,6 +13,7 @@ angular.module('urbndex')
                 'cheevo_count': '234'
             },
             {
+                'id': '2',
                 'photoSrc': '2_UOI_MaidaT1_LThumb.jpg',
                 'name': 'Theresa Maida',
                 'title': 'Creative Project Delivery Mgr',
@@ -20,6 +22,7 @@ angular.module('urbndex')
                 'cheevo_count': '435'
             },
             {
+                'id': '3',
                 'photoSrc': '3_UOI_NothsteinK1_LThumb.jpg',
                 'name': 'Kay Nothstein',
                 'title': 'Project Manager Ecommerce',
@@ -28,6 +31,7 @@ angular.module('urbndex')
                 'cheevo_count': '322'
             },
             {
+                'id': '4',
                 'photoSrc': '4_UOI_JohnsenA1_LThumb.jpg',
                 'name': 'Annaliese Johnsen',
                 'title': 'Project Manager',
@@ -36,6 +40,7 @@ angular.module('urbndex')
                 'cheevo_count': '43'
             },
             {
+                'id': '5',
                 'photoSrc': '5_UOI_MillerSt1_LThumb.jpg',
                 'name': 'Stephen Miller',
                 'title': 'Senior Manager',
@@ -44,6 +49,7 @@ angular.module('urbndex')
                 'cheevo_count': '234'
             },
             {
+                'id': '6',
                 'photoSrc': '6_UOI_InnesB1_LThumb.jpg',
                 'name': 'Brian Innes',
                 'title': 'Director of Web Production',
@@ -52,6 +58,7 @@ angular.module('urbndex')
                 'cheevo_count': '432'
             },
             {
+                'id': '7',
                 'photoSrc': '7_UOI_laviniam1_LThumb.jpg',
                 'name': 'Matt Lavinia',
                 'title': 'Development Manager',
@@ -60,6 +67,7 @@ angular.module('urbndex')
                 'cheevo_count': '567'
                 },
             {
+                'id': '8',
                 'photoSrc': '8_UOI_parkr1_LThumb.jpg',
                 'name': 'RayAna Park',
                 'title': 'Project Manager Digital',
@@ -68,6 +76,7 @@ angular.module('urbndex')
                 'cheevo_count': '345'
             },
             {
+                'id': '9',
                 'photoSrc': '9_UOI_mairs1_LThumb.jpg',
                 'name': 'Steve Mair',
                 'title': 'Web Production Manager',
@@ -76,6 +85,7 @@ angular.module('urbndex')
                 'cheevo_count': '422'
             },
             {
+                'id': '10',
                 'photoSrc': '10_UOI_RudiA1_LThumb.jpg',
                 'name': 'Andrew Rudi',
                 'title': 'Front End Developer',
@@ -84,6 +94,7 @@ angular.module('urbndex')
                 'cheevo_count': '298'
             },
             {
+                'id': '11',
                 'photoSrc': '11_UOI_LiC1_LThumb.jpg',
                 'name': 'Chunyin Li',
                 'title': 'Front End Developer',
@@ -92,6 +103,7 @@ angular.module('urbndex')
                 'cheevo_count': '198'
             },
             {
+                'id': '12',
                 'photoSrc': '12_UOI_FriedgenK1_LThumb.jpg',
                 'name': 'Katie Friedgen',
                 'title': 'Front End Developer',
@@ -100,6 +112,7 @@ angular.module('urbndex')
                 'cheevo_count': '23'
             },
             {
+                'id': '13',
                 'photoSrc': '13_UOI_HortonL1_LThumb.jpg',
                 'name': 'Louis Horton',
                 'title': 'Front End Developer',
@@ -108,6 +121,7 @@ angular.module('urbndex')
                 'cheevo_count': '0'
             },
             {
+                'id': '14',
                 'photoSrc': '14_UOI_KalayehM1_LThumb.jpg',
                 'name': 'Meina Kalayeh',
                 'title': 'Front End Developer',
@@ -116,6 +130,7 @@ angular.module('urbndex')
                 'cheevo_count': ''
             },
             {
+                'id': '15',
                 'photoSrc': '15_UOI_BicknellT1_LThumb.jpg',
                 'name': 'Tom Bicknell',
                 'title': 'Front End Developer',
@@ -124,6 +139,7 @@ angular.module('urbndex')
                 'cheevo_count': '312'
             },
             {
+                'id': '16',
                 'photoSrc': '16_UOI_StonakerT1_LThumb.jpg',
                 'name': 'Tracy Stonaker',
                 'title': 'Front End Developer',
@@ -132,6 +148,7 @@ angular.module('urbndex')
                 'cheevo_count': '234'
             },
             {
+                'id': '17',
                 'photoSrc': '17_UOI_ThielP1_LThumb.jpg',
                 'name': 'Patrick Thiel',
                 'title': 'Quality Assurance Analyst',
@@ -140,6 +157,7 @@ angular.module('urbndex')
                 'cheevo_count': '234'
             },
             {
+                'id': '18',
                 'photoSrc': '18_UOI_DrobatzA1_LThumb.jpg',
                 'name': 'Alyssa Drobatz',
                 'title': 'Temporary Employee',
@@ -148,6 +166,7 @@ angular.module('urbndex')
                 'cheevo_count': '10'
             },
             {
+                'id': '19',
                 'photoSrc': '19_UOI_MallonD1_LThumb.jpg',
                 'name': 'David Mallon',
                 'title': 'Senior Web Producer',
@@ -156,6 +175,7 @@ angular.module('urbndex')
                 'cheevo_count': '430'
             },
             {
+                'id': '20',
                 'photoSrc': '20_UOI_ConnerS1_LThumb.jpg',
                 'name': 'Simone Conner',
                 'title': 'Web Producer',
@@ -164,6 +184,7 @@ angular.module('urbndex')
                 'cheevo_count': '134'
             },
             {
+                'id': '21',
                 'photoSrc': '21_UOI_SmithCr1_LThumb.jpg',
                 'name': 'Craig Smith',
                 'title': 'Web Producer',
@@ -172,6 +193,7 @@ angular.module('urbndex')
                 'cheevo_count': '1000'
             },
             {
+                'id': '22',
                 'photoSrc': '22_UOI_MayerS1_LThumb.jpg',
                 'name': 'Samantha Mayer',
                 'title': 'Web Producer',
@@ -195,11 +217,8 @@ angular.module('urbndex')
                 return question;
             },
 
-            fetchProfile: function () {
-                var profileData = _.find(urbnDexData.cards, { name: 'Matt Lavinia'});
-
-                profileData.level = '45';
-                profileData.cheevo_count = '438';
+            fetchProfile: function (id) {
+                var profileData = _.find(urbnDexData.cards, { id: id});
 
                 return profileData;
             },
