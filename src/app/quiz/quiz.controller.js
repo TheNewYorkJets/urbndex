@@ -2,28 +2,44 @@
 
 angular.module('urbndex').
     controller('QuizCtrl', function ($scope, $timeout, $rootScope, dummy_data) {
+        // some of these logics can be separated out into a 'question' controller
 
         $scope.model = {
-            revealDetails: false,
-            chosenAnswer: ''
+
+            // these values needs to be reset for each question
+            each: {
+                revealDetails: false,
+                chosenAnswer: '',
+                gotItRight: false
+            },
+
+            totalCount: 5,
+            questionsArr: [],
+
+            // array of boolean for tracking question
+            tracker: []
         };
 
         $scope.action = {
             chooseAnswer: function (choice) {
-                if($scope.model.chosenAnswer) {
-                    alert('you only get to choose once');
-                } else {
-                    $scope.model.chosenAnswer = choice;
-                    $scope.model.gotItRight = choice.name === $scope.model.question.answer.name;
+                var gotItRight;
+
+                if(!$scope.model.each.chosenAnswer) {
+                    gotItRight = $scope.action.checkRightAnswer(choice);
+
+                    $scope.model.each.chosenAnswer = choice;
+                    $scope.model.each.gotItRight = gotItRight;
+
+                    trackQuestion(gotItRight);
+
+                    // stop timer after choosing
+                    $rootScope.$emit('stop.countdown');
 
                     $timeout(function () {
                         // after revealing answer for 2 seconds
                         // show revealDetails
                         revealDetails();
                     }, 2000);
-
-                    // stop timer after choosing
-                    $rootScope.$emit('stop.countdown');
                 }
             },
             resetQuiz: function () {
@@ -34,44 +50,66 @@ angular.module('urbndex').
             }
         };
 
-        function revealDetails () {
-            console.log('here');
+        function trackQuestion (result) {
+            $scope.model.tracker.push(result);
+        }
+
+        function timesUp () {
+            console.log('times up');
             $scope.$apply(function () {
-                $scope.model.revealDetails = true;
+                trackQuestion(false);
+                revealDetails();
             });
         }
 
-        function getQuestion () {
-            $scope.model.question = dummy_data.fetchQuiz();
+        function revealDetails () {
+            $scope.model.each.revealDetails = true;
+        }
+
+        function getQuestions () {
+            var i;
+
+            for(i = 0; i < $scope.model.totalCount; i++) {
+                $scope.model.questionsArr.push(dummy_data.fetchQuiz());
+            }
+
+            console.log($scope.model.questionsArr);
+
+        }
+
+        function setNextQuestion () {
+            console.log($scope.model.tracker);
+            $scope.model.question = $scope.model.questionsArr[$scope.model.tracker.length];
         }
 
         function resetQuiz () {
-            $scope.model = {
-                revealDetails: false,
-                chosenAnswer: '',
-                gotItRight: false
-            };
+            if($scope.model.tracker.length >= $scope.model.totalCount) {
+                // show end screen
+            } else {
+                $scope.model.each.revealDetails = false;
+                $scope.model.each.chosenAnswer = '';
+                $scope.model.each.gotItRight = false;
+                
 
-            getQuestion();
-            init();
+                setNextQuestion();
+                init();
+
+            }
         }
 
         function init () {
 
             // start timer after fetching data
             $rootScope.$emit('start.countdown');
-
-            angular.forEach($scope.model.question.choices, function(option) {
-                option.rank = Math.random();
-            });
         }
         
         // fetch data
+        getQuestions();
         $timeout(function () {
-            getQuestion();
+            setNextQuestion();
             init();
         }, 0);
 
-        $rootScope.$on('finish.countdown', revealDetails);
+        $rootScope.$on('finish.countdown', timesUp);
 
     });
