@@ -30,7 +30,7 @@ angular.module('urbndex').
                     $scope.model.each.chosenAnswer = choice;
                     $scope.model.each.gotItRight = gotItRight;
 
-                    $scope.model.tracker.push(gotItRight);
+                    trackQuestion(gotItRight);
 
                     // stop timer after choosing
                     $rootScope.$emit('stop.countdown');
@@ -50,10 +50,20 @@ angular.module('urbndex').
             }
         };
 
-        function revealDetails () {
+        function trackQuestion (result) {
+            $scope.model.tracker.push(result);
+        }
+
+        function timesUp () {
+            console.log('times up');
             $scope.$apply(function () {
-                $scope.model.each.revealDetails = true;
+                trackQuestion(false);
+                revealDetails();
             });
+        }
+
+        function revealDetails () {
+            $scope.model.each.revealDetails = true;
         }
 
         function getQuestions () {
@@ -100,6 +110,6 @@ angular.module('urbndex').
             init();
         }, 0);
 
-        $rootScope.$on('finish.countdown', revealDetails);
+        $rootScope.$on('finish.countdown', timesUp);
 
     });

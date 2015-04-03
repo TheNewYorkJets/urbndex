@@ -8,6 +8,8 @@ angular.module('urbndex')
                 function createCountdown(milliSeconds) {
 
                     element.countdown((new Date()).getTime() + milliSeconds)
+                        // remove previous event binding
+                        .off('.countdown')
                         .on('update.countdown', function (event) {
                             $(this).html(event.strftime('%S'));
                         })
@@ -18,8 +20,7 @@ angular.module('urbndex')
                 }
 
                 $rootScope.$on('start.countdown', function (event, sec) {
-                    var seconds = sec || 10;
-                    // element.countdown('start');
+                    var seconds = sec || 3;
                     createCountdown(seconds * 1000);
                 });
 
