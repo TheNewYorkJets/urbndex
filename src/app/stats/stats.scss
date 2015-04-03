@@ -48,13 +48,13 @@
 		-moz-border-radius-bottomleft: 20px;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
-		background-color: rgb(43,194,83);
+		background-color: $dex-green;
 		background-image: -webkit-gradient(
 		linear,
 		left bottom,
 		left top,
-		color-stop(0, rgb(43,194,83)),
-		color-stop(1, rgb(84,240,84))
+		color-stop(0, $dex-green),
+		color-stop(1, $dex-green)
 		);
 		background-image: -moz-linear-gradient(
 		center bottom,
@@ -174,7 +174,7 @@
 		margin-top: 55px;
 		font: 12px/18px Arial, Helvetica, sans-serif;
         letter-spacing: 1px;
-        color: $white;
+        color: $dark-grey;
 	}
 
 	.stats-level {
@@ -299,13 +299,13 @@
 		-moz-border-radius-bottomleft: 20px;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
-		background-color: rgb(43,194,83);
+		background-color: $dex-green;
 		background-image: -webkit-gradient(
 		linear,
 		left bottom,
 		left top,
-		color-stop(0, rgb(43,194,83)),
-		color-stop(1, rgb(84,240,84))
+		color-stop(0, $dex-green),
+		color-stop(1, $dex-green)
 		);
 		background-image: -moz-linear-gradient(
 		center bottom,

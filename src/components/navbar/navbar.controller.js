@@ -8,7 +8,6 @@ angular.module('urbndex').
 
     var a = $scope.action = {
         showHide: function () {
-            console.log('toggle');
             $('.hamburger-menu').toggle();
         },
 
@@ -17,4 +16,15 @@ angular.module('urbndex').
             window.location = "/#/" + route;
         }
     };
+
+    $(document).mouseup(function (e) {
+        var container = $(".hamburger-menu");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            container.hide();
+        }
+    });
+
   }]);
