@@ -1,0 +1,44 @@
+<div class="container stats">
+    <h1>
+        <span class="breadcrumb">URBNdex > Stats</span>
+    </h1>
+
+    <div class="profile-wrapper-stats">
+        <div class="stats-image">
+            <img ng-src="/assets/users/{{ model.photoSrc }}" />
+        </div>
+
+        <div class="profile-details">
+            {{ model.name }} <br />
+            {{ model.title }} <br />
+            {{ model.dept }} <br />
+        </div>
+
+        <div class="stats-level">
+            Level: {{ model.level }}
+        </div>
+    </div>
+
+    <div class="chievos-wrapper">
+        <h2>Cheevos</h2>
+        <div class="stats-cheevos-earned" ng-repeat="cheevo in model.cheevos.earned">
+            <img ng-src="{{ cheevo.img }}" />
+            {{ cheevo.name }}
+        </div>
+
+        <!-- <h2>Unearned Achievements</h2> -->
+        <div class="stats-cheevos-unearned" ng-repeat="cheevo in model.cheevos.unearned">
+            <img class="uncheevod" ng-src="{{ cheevo.img }}" />
+            {{ cheevo.name }}
+        </div>
+    </div>
+
+    <div class="bio-wrapper">
+        <h2>Additional Information</h2>
+        <div class="bio-details" ng-repeat="question in model.bio.question">
+            {{ question.quest }} <br />
+            <span class="answer-font">{{ question.ans }}</span> <br />
+            <br />
+        </div>
+    </div>
+</div>
