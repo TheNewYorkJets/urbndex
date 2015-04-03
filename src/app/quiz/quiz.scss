@@ -10,7 +10,7 @@ $quizTrackerSize: 8px;
 }
 
 .quiz-bar {
-    background: #1a6aff;
+    background: $dex-green;
     margin-bottom: 30px;
 }
 
@@ -35,7 +35,7 @@ $quizTrackerSize: 8px;
     border-radius: 50%;
 
     &.correct {
-        background: $dex-green;
+        background: $green;
     }
 
     &.incorrect {

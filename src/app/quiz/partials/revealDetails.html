@@ -5,4 +5,7 @@
 
 <div class="department quiz-content-block">Department: {{ model.question.answer.dept }}</div>
 
-<button class="next-quiz" ng-click="action.resetQuiz()">Next Question</button>
+<div ng-switch="model.tracker.length >= model.totalCount">
+    <a ng-switch-when="true" class="next-quiz default-button" href="/#/quizEnd">Next Question</a>
+    <button ng-switch-default class="next-quiz" ng-click="action.resetQuiz()">Next Question</button>
+</div>

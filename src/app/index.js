@@ -3,9 +3,17 @@
 var app = angular.module('urbndex', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
+      .when('/quizStart', {
+        templateUrl: 'app/quizStart/quiz-start.html',
+        controller: 'QuizStartCtrl'
+      })
       .when('/quiz', {
         templateUrl: 'app/quiz/quiz.html',
         controller: 'QuizCtrl'
+      })
+      .when('/quizEnd', {
+        templateUrl: 'app/quizEnd/quiz-end.html',
+        controller: 'QuizEndCtrl'
       })
       .when('/profile', {
         templateUrl: 'app/profile/profile.html',
