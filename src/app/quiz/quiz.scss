@@ -11,3 +11,30 @@
     background: green;
 }
 
+.quiz-tracker {
+    float: left;
+}
+
+.tracker-dot {
+    display: inline-block;
+    margin-right: 4px;
+    background: black;
+    width: 5px;
+    height: 5px;
+
+    &.correct {
+        background: green;
+    }
+
+    &.incorrect {
+        background: red
+    }
+}
+
+.quiz-countdown {
+    float: right;
+}
+
+.quiz-image {
+    clear: both;
+}
